@@ -1,0 +1,25 @@
+{ 
+  "name": "StockTicker",
+  "author": "Anuj Shah",
+  "description": "View stock prices on a scrolling ticker.",
+  "version": "1.2",
+  "icons": 
+  {
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png",
+	  "128": "128.png"
+  },
+  "chrome_url_overrides":
+  {
+	"newtab": "newtab.html"
+  },
+  "browser_action":
+  {
+	"default_icon": "stocks.png",
+	"default_popup": "popup.html",
+	"default_title": "Look up stocks!"
+  },
+  "permissions": ["<all_urls>"],
+  "manifest_version": 2
+} 

@@ -1,0 +1,40 @@
+---------- StockTicker ---------- 
+
+Google Chrome Extension
+Author: Michael Song
+Description: View stock prices on a scrolling ticker.
+API --
+	Markit: http://markitondemand.com
+
+--- URLs ---
+
+Key --
+	[user_text] = text entered in the search box
+	[ticker_symbol] = name of the stock symbol
+
+Lookup: http://dev.markitondemand.com/Api/v2/Lookup/json?input=[user_text]
+Quote: http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=[ticker_symbol]
+Yahoo Search URL: http://finance.yahoo.com/q?s=[ticker_symbol]
+
+--- Objectives ---
+
+- Enable users to easily search for a stock and check if the price went up or down.
+- Display a scrolling stock ticker on the new tab page.
+
+--- Features/Capabilities ---
+
+- Find stock quotes by searching for them in the search box.
+- View all of the stocks that you are following on a scrolling ticker by opening a new tab.
+- Click on the stock's symbol to get real-time updates.
+
+--- Buttons ---
+
+- Submit –- searches for the specified company or symbol
+- Show Favorites –- displays all of the favorites and their information in a table
+- " + " –- adds stock to favorites
+- " * " –- removes stock from favorites
+
+--- Side Notes ---
+
+- Stock information refreshes when the pop-up is opened.
+- Favorites are shown by default.

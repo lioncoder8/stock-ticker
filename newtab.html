@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+	<head>
+		<title>Custom Tab</title>
+		<meta name = "author" content = "Anuj Shah">
+		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			a
+			{
+				text-decoration: none;
+				color: blue;
+			}
+			@keyframes marquee
+			{
+				0% {transform: translate(0,0);}
+				100% {transform: translate(-100%,0);}
+			}
+			@-webkit-keyframes marquee
+			{
+				0% {transform: translate(0,0);}
+				100% {transform: translate(-100%,0);}
+			}
+			span
+			{
+				color: green;
+			}
+			font
+			{
+				color: red;
+			}
+			.marquee
+			{
+				box-sizing: border-box;
+				margin: 0 auto;
+				overflow: hidden;
+				white-space: nowrap;
+				background-color: #DADADA;
+				font-weight: bold; 
+			}
+			.marquee > span
+			{
+				display: inline-block;
+				padding-left: 100%; 
+				color: black;
+			}
+			#ticker
+			{
+				height: 40px;
+				font-size: 25px;
+				font-family: Tahoma, cursive;
+				margin: -8px 4px 10px -8px;
+			}
+			.div
+			{
+				width: 106.8em;
+				height: 5em;
+				margin: -10px 4px 10px -8px;
+			}
+			.ss:hover
+			{
+				font-weight: bold;
+			}
+			#submit:hover
+			{ 
+				background-color: #D0D0D0; 
+			}
+		</style>
+	</head>
+	<body style = "background-color:#9494B8;overflow-x:hidden;">
+		<p class = "marquee" id = "ticker"><span id = "speed"></span></p>
+		<center><a href = "http://finance.yahoo.com/">
+			<img src = "yahoo_finance.png"/>
+		</a></center>
+		<div id = ":">
+			<form method = "get" id = "url" action = "https://www.google.com/search" target = "_self">
+				<div id = "sty" style = "margin-top:20px;padding:10px;">
+					<table border = "0" cellpadding = "0" class="text-center">
+						<tr class="row">
+							<td class="col-sm-3">
+								<input 
+									type = "text"
+									spellcheck = "false"
+									name = "q" 
+									size = "30"
+									maxlength = "100" 
+									id = "input"
+									placeholder = "Search"/>
+							</td>
+							<td class="col-sm-3">
+								<input id = "submit" type = "submit" value = "Submit"/>
+							</td>
+						</tr>
+					</table>
+					<p id = "suggest"></p>
+				</div>
+			</form>
+		</div>
+		<script src = "newtab.js"></script>
+	</body>
+</html> 
