@@ -28,4 +28,4 @@ View stock prices on a scrolling ticker.
 - Favorites are shown by default.
 
 ### API
-- Markit: http://dev.markitondemand.com
+- Markit: http://markitondemand.com
